@@ -1,0 +1,30 @@
+h1, p {
+  font-family: Lato;
+}
+
+.multi-select {
+  background-color: lightgrey;
+  color:black;
+}
+
+.multi-select span{
+  color:black !important;
+}
+.drop-down {
+  background-color: lightgrey;
+  color:black;
+}
+
+
+.dropdown-heading{
+  background-color: lightgrey;
+  color:black;
+
+}
+
+
+.dropdown-heading-value{
+  background-color: lightgrey;
+  color:black;
+  
+}
