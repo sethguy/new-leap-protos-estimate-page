@@ -47,7 +47,7 @@ const SideBarSection = (props) => {
         transition: 'width .5s'
       }}
       className='d-flex flex-column h-100'>
-      <div style={{ height: 50, width: sideBareWidth, backgroundColor: 'white' }} >
+      <div style={{ height: 117, width: sideBareWidth, backgroundColor: 'white' }} >
       </div>
       <div className='d-flex' style={{ flex: 1 }} >
         <div className='h-100' style={{ flex: 1, overflow: 'scroll' }} >

@@ -12,11 +12,23 @@ class MainTopBar extends Component {
   render() {
     return (
       <div className='main-top-bar-section' style={{ backgroundColor: 'lightgrey' }} >
-
-        <div className='main-top-bar' style={{ height: 63, boxShadow: '5px 10px #888888', backgroundColor: 'lightgrey' }} >
+        <div className='main-top-bar'
+          style={{
+            position: 'relative',
+            zIndex: 10,
+            height: 63,
+            boxShadow: '5px 1px 10px 0px rgba(0,0,0,0.75',
+            backgroundColor: 'lightgrey'
+          }} >
         </div>
-
-        <div className='main bread-action' style={{ height: 54, backgroundColor: 'white' }} >
+        <div
+          className='main bread-action'
+          style={{
+            position: 'relative',
+            zIndex: 1,
+            height: 54,
+            backgroundColor: 'lightgrey'
+          }} >
         </div>
 
       </div>
