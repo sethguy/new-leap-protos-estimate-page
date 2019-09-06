@@ -37,8 +37,6 @@ const mainMenuOptions = [
 
 const SideBarSection = (props) => {
 
-  const { } = props;
-
   const [sideBareWidth, setWidth] = useState(200)
 
   return (
@@ -46,7 +44,7 @@ const SideBarSection = (props) => {
       style={{
         width: sideBareWidth,
         backgroundImage: 'linear-gradient(#8DDD65, #26D07C)',
-        transition:' width .5s'
+        transition: 'width .5s'
       }}
       className='d-flex flex-column h-100'>
       <div style={{ height: 50, width: sideBareWidth, backgroundColor: 'white' }} >
