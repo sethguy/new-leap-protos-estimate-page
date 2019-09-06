@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GrayDropDown from './GrayDropDown';
-
+import { history } from './Router'
 const EsitmatesListSection = (props) => {
 
   const { customers } = props;
@@ -16,6 +16,9 @@ const EsitmatesListSection = (props) => {
             style={{
               padding: 10,
               backgroundColor: i % 2 ? 'white' : '#E5E5E5'
+            }}
+            onClick={() => {
+              window.location.href = '/#/customer'
             }}
             className='d-flex align-items-center' >
             <div style={{ flex: 1 }} >

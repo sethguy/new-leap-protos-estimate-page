@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './style.css';
 
-import { EstimatePage } from './EstimatesPage'
-import { CustomerPage } from './CustomerPage'
+import { Router } from './Router'
 
 class App extends Component {
   constructor() {
@@ -13,7 +12,7 @@ class App extends Component {
 
   render() {
     return (
-      <CustomerPage />
+      <Router />
     );
   }
 }

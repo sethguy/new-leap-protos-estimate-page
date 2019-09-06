@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "@khanacademy/react-multi-select": "^0.3.3",
+    "history": "^4.9.0",
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "react-router-dom": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
