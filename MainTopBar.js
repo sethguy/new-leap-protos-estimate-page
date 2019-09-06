@@ -17,12 +17,12 @@ class MainTopBar extends Component {
             position: 'relative',
             zIndex: 10,
             height: 63,
-            boxShadow: '5px 1px 10px 0px rgba(0,0,0,0.75',
+            boxShadow: '5px 1px 10px 0px rgba(0,0,0,0.75)',
             backgroundColor: 'lightgrey'
           }} >
         </div>
         <div
-          className='main bread-action'
+          className='top-bread-action'
           style={{
             position: 'relative',
             zIndex: 1,
