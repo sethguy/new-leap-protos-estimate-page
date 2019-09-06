@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 const mainMenuOptions = [
-
   {
     title: 'App Settings',
     link: ''
@@ -40,14 +39,17 @@ const SideBarSection = (props) => {
 
   const { } = props;
 
+  const [sideBareWidth, setWidth] = useState(200)
+
   return (
     <div
       style={{
-        width: 200,
-        backgroundImage: 'linear-gradient(#8DDD65, #26D07C)'
+        width: sideBareWidth,
+        backgroundImage: 'linear-gradient(#8DDD65, #26D07C)',
+        transition:' width .5s'
       }}
       className='d-flex flex-column h-100'>
-      <div style={{ height: 50, width: 200, backgroundColor: 'white' }} >
+      <div style={{ height: 50, width: sideBareWidth, backgroundColor: 'white' }} >
       </div>
       <div className='d-flex' style={{ flex: 1 }} >
         <div className='h-100' style={{ flex: 1, overflow: 'scroll' }} >
@@ -60,12 +62,16 @@ const SideBarSection = (props) => {
           })}
         </div>
 
-        <div className='h-100 d-flex align-items-center justify-content-center'
+        <div
+          onClick={() => {
+            setWidth(sideBareWidth == 200 ? 20 : 200)
+          }}
+          className='h-100 d-flex align-items-center justify-content-center'
           style={{
             width: 20,
             backgroundColor: 'lightgrey',
           }} >
-          <i class="fas fa-chevron-left"></i>
+          <i className={`fas fa-chevron-${sideBareWidth == 200 ? 'left' : 'right'}`}></i>
         </div>
       </div>
     </div>
